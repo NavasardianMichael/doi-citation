@@ -1,7 +1,7 @@
 {
-  "name": "doi-citations",
-  "homepage": "https://NavasardianMichael.github.io/doi-citations",
-  "version": "0.1.1",
+  "name": "doi-citation",
+  "homepage": "https://NavasardianMichael.github.io/doi-citation",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
