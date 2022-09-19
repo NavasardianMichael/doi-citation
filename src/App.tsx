@@ -19,8 +19,6 @@ function App() {
   const closeSnackbar = () => setStackbarOpened(false)
   
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
-    console.log('handleSubmit');
-    
     e.preventDefault()
     closeSnackbar()
 
@@ -39,7 +37,6 @@ function App() {
   }
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
-    console.log('CHANGED')
     setQuery(e.target.value)
   }
 
@@ -49,7 +46,7 @@ function App() {
       <Box
         component="form"
         sx={{
-          '& .MuiTextField-root': { m: 1, width: '60%' },
+          '& .MuiTextField-root': { m: 1, width: '60%', minWidth: '300px', margin: 0 },
         }}
         onSubmit={handleSubmit}
       >

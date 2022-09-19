@@ -9,7 +9,6 @@ body {
 
 .app {
   text-align: center;
-  padding: 1rem 3rem;
 }
 
 h2 {
@@ -18,4 +17,10 @@ h2 {
 
 h3 {
   margin-top: 3rem;
+}
+
+p {
+  margin: auto;
+  width: 60%;
+  min-width: 300px;
 }
