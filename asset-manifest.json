@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/doi-citations/static/css/main.68a4294d.css",
+    "main.js": "/doi-citations/static/js/main.9d522254.js",
+    "static/js/787.d30f9f7c.chunk.js": "/doi-citations/static/js/787.d30f9f7c.chunk.js",
+    "index.html": "/doi-citations/index.html",
+    "main.68a4294d.css.map": "/doi-citations/static/css/main.68a4294d.css.map",
+    "main.9d522254.js.map": "/doi-citations/static/js/main.9d522254.js.map",
+    "787.d30f9f7c.chunk.js.map": "/doi-citations/static/js/787.d30f9f7c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68a4294d.css",
+    "static/js/main.9d522254.js"
+  ]
+}
