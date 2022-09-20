@@ -24,3 +24,13 @@ p {
   width: 60%;
   min-width: 300px;
 }
+
+form {
+  margin: auto;
+  width: 60%;
+  min-width: 300px;
+}
+
+form > div {
+  width: 100%;
+}

@@ -4,10 +4,11 @@ import Snackbar from '@mui/material/Snackbar';
 import TextField from '@mui/material/TextField';
 import Alert from '@mui/material/Alert';
 import './app.css';
+import { Button } from '@mui/material';
 
 function App() {
   const [ query, setQuery ] = useState<string>('')
-  const [ citation, setCitation ] = useState<string>('')
+  const [ citation, setCitation ] = useState<string>('* ~~~~~~~~~~~~~~~~~~~~~~ *')
   const [ stackbarOpened, setStackbarOpened ] = useState<boolean>(false)
   const [ stackbarReason, setStackbarReason ] = useState<string>('')
 
@@ -43,13 +44,7 @@ function App() {
   return (
     <div className="app">
       <h2>Cite by DOI</h2>
-      <Box
-        component="form"
-        sx={{
-          '& .MuiTextField-root': { m: 1, width: '60%', minWidth: '300px', margin: 0 },
-        }}
-        onSubmit={handleSubmit}
-      >
+      <form onSubmit={handleSubmit}>
         <TextField
           autoFocus
           id="standard-error"
@@ -59,7 +54,8 @@ function App() {
           variant="standard"
           required
           />
-      </Box>
+        <Button type='submit' style={{margin: '1.5rem auto', display: 'block'}} variant="contained">Search</Button>
+      </form>
       <h3>Citation</h3>
       <p>{citation}</p>
       <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={stackbarOpened} onClose={closeSnackbar}>
