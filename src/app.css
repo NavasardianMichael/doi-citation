@@ -9,6 +9,11 @@ body {
 
 .app {
   text-align: center;
+
+  &.pending {
+    opacity: .5;
+    pointer-events: none;
+  }
 }
 
 h2 {
@@ -33,4 +38,17 @@ form {
 
 form > div {
   width: 100%;
+}
+
+.citation {
+  all: unset;
+  padding: .75rem 1.5rem;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: .2s;
+  
+  &:hover {
+    cursor: copy;
+    box-shadow: 0px 0px 4px 1px #e0e0e0;
+  }
 }
